@@ -5,6 +5,7 @@ export default class Button {
     return {
       TBtn: VBtn,
       TTextBtn: VBtn,
+      TIconBtn: VBtn,
       TSecondaryBtn: VBtn,
       TTextSecondaryBtn: VBtn,
     };
@@ -23,6 +24,13 @@ export default class Button {
         color: 'primary',
         variant: 'text',
         ...this.getDefaultAttributes(),
+      },
+      TIconBtn: {
+        color: 'primary',
+        variant: 'text',
+        icon: true,
+        ...this.getDefaultAttributes(),
+        class: 't-btn--rounded'
       },
       TSecondaryBtn: {
         color: 'secondary',
