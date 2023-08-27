@@ -1,2 +1,19 @@
-@import 'base';
-
+.main {
+  margin: 20px;
+  &-menu {
+    &__logout-icon {
+      font-size: 20px;
+    }
+  }
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    p {
+      flex: 1 1 auto;
+      &:last-child {
+        flex: 0 0 auto;
+        margin-left: 20px;
+      }
+    }
+  }
+}
